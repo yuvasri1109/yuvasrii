@@ -1,0 +1,196 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Style for the video to fill the background */
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes sure the video covers the entire container */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e0e0e0;
+}
+
+.intro {
+    padding: 2rem; /* Increase padding for more space around content */
+    margin: 10rem auto; /* Increase margin to create more space between sections */
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 1.5rem; /* Add more margin below the heading */
+}
+
+.intro p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Divider style */
+.divider {
+    border: 0;
+    height: 2px;
+    background: #4CAF50; /* Dark green color for the divider */
+    margin: 3rem 0; /* Spacing around the divider */
+}
+
+/* Explore Button Style */
+.explore-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #4CAF50; /* Dark green */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.explore-btn:hover {
+    background-color: #45a049; /* Slightly lighter green on hover */
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Content Card Styling */
+.content-card {
+    width: 30px; /* Set the width */
+    height: 300px; /* Set the height equal to the width to make it square */
+    background: #fff; /* White background for cards */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* About Section */
+.about-section {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 20rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Contact Section */
+.contact-preview {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-preview h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.contact-preview p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro, .about-section, .contact-preview {
+        padding: 1rem;
+    }
+    
+    .intro h1, .about-section h2, .contact-preview h2 {
+        font-size: 2rem;
+    }
+
+    .intro p, .about-section p, .contact-preview p {
+        font-size: 1rem;
+    }
+}
